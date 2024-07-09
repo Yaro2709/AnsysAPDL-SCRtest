@@ -1,13 +1,19 @@
-export type BuildMode = 'production' | 'development'; //тип опций сборки
+export type BuildMode = 'production' | 'development';
 
-export interface BuildPaths { //формируем массив путей
+export interface BuildPaths {
     entry: string;
     build: string;
     html: string;
 }
 
-export interface BuildOptions { //передача опций
-    mode: BuildMode; //передача типа опции сборки
-    paths: BuildPaths; //передаем массив путей
-    isDev: boolean; //isDev = true, если BuildMode = production
+export interface BuildEnv{
+    mode: BuildMode;
+    port: number;
+}
+
+export interface BuildOptions {
+    mode: BuildMode;
+    paths: BuildPaths;
+    isDev: boolean;
+    port: number;
 }
