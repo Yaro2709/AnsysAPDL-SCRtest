@@ -8,6 +8,7 @@ import {buildDevServer} from "./buildDevServer";
 
 export function buildWebpackConfig(options: BuildOptions): webpack.Configuration {
     const {paths, mode, isDev} = options; //проведем диструктуризацию: вытаксиваем мод и пути
+
     return {
         mode: mode, //этап нашей разработки
         entry: paths.entry, //стартовая точка нашего приложения
@@ -18,7 +19,7 @@ export function buildWebpackConfig(options: BuildOptions): webpack.Configuration
         },
         plugins: buildPlugins(options), //вызываем функцию списка плагинов
         module: { //конфигурация loader. Предназначены для обработки файлов, которые выходят за рамки js, например: png, gif, css...
-            rules: buildLoaders(), //вызываем фнукцию, списка наших регулярных выражений и исключений
+            rules: buildLoaders(options), //вызываем фнукцию, списка наших регулярных выражений и исключений
         },
         resolve: buildResolvers(), //вызываем функцию списка расширений, которые мы не будем указывать при подключении
         devtool: isDev ? 'inline-source-map' : undefined,
