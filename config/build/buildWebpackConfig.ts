@@ -21,7 +21,7 @@ export function buildWebpackConfig(options: BuildOptions): webpack.Configuration
         module: { //конфигурация loader. Предназначены для обработки файлов, которые выходят за рамки js, например: png, gif, css...
             rules: buildLoaders(options), //вызываем фнукцию, списка наших регулярных выражений и исключений
         },
-        resolve: buildResolvers(), //вызываем функцию списка расширений, которые мы не будем указывать при подключении
+        resolve: buildResolvers(options), //вызываем функцию списка расширений, которые мы не будем указывать при подключении
         devtool: isDev ? 'inline-source-map' : undefined,
         devServer: isDev ? buildDevServer(options) : undefined, //devServer
     }
