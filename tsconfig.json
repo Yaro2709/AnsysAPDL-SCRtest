@@ -7,6 +7,7 @@
     "jsx": "react", //позволяет писать конструкции, как в react
     "allowJs": true, //компилятор обрабатывает не только TS файлы, но и JS файлы
     "moduleResolution": "node", //определяет какие импорты будут
+    "baseUrl": ".",
     "esModuleInterop": true, //позволяет работать с пакетами, которые используют common js как с обычными пакетами с помощью import
     "allowSyntheticDefaultImports": true //поддержка дефолтного импорта
   },
