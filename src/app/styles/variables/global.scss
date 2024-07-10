@@ -10,4 +10,7 @@
   --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main); /*объединяющая переменная, которая включает размер шрифта, размеры высоты шрифта, стиль шрифта*/
 
   --navbar-height: 50px;/*размер NavBar*/
+
+  --sidebar-width: 300px;/*размер SideBar*/
+  --sidebar-width-collapsed: 80px;/*размер SideBar при свертке*/
 }
