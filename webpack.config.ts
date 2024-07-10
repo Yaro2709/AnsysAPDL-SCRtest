@@ -1,15 +1,15 @@
-import webpack from 'webpack';//для доступа к встроенным плагинам
-import {buildWebpackConfig} from "./config/build/buildWebpackConfig";
-import {BuildEnv, BuildPaths} from "./config/build/types/config";
-import path from "path";
+import webpack from 'webpack';// для доступа к встроенным плагинам
+import path from 'path';
+import { buildWebpackConfig } from './config/build/buildWebpackConfig';
+import { BuildEnv, BuildPaths } from './config/build/types/config';
 
-export default (env: BuildEnv) => {//это функция принимает переменные окружения
+export default (env: BuildEnv) => { // это функция принимает переменные окружения
     const paths: BuildPaths = {
         entry: path.resolve(__dirname, 'src', 'index.tsx'),
         build: path.resolve(__dirname, 'build'),
         html: path.resolve(__dirname, 'public', 'index.html'),
         src: path.resolve(__dirname, 'src'),
-    }
+    };
 
     const mode = env.mode || 'development';
     const isDev = mode === 'development';
@@ -20,7 +20,7 @@ export default (env: BuildEnv) => {//это функция принимает п
         paths,
         isDev,
         port: PORT,
-    })
+    });
 
     return config;
-}
+};
