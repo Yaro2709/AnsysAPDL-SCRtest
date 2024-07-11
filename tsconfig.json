@@ -18,5 +18,11 @@
     "compilerOptions": {
       "module": "CommonJS"
     }
-  }
+  },
+  "include": [
+    "./config/jest/setupTests.ts", // наш ts конфиг для тестов
+    // необходимо чтобы не ломались импорты scss при подключение /config/jest/setupTests.ts
+    "./src/**/*.ts",
+    "./src/**/*.tsx"
+  ]
 }

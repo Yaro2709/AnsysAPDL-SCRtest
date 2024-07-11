@@ -38,10 +38,25 @@ module.exports = {
         'import/extensions': 'off', // в импортах не надо указывать расширение, тк мы так настроили вебпак
         'import/no-extraneous-dependencies': 'off', // отключим запрет на импорт дев зависимостей
         'no-underscore-dangle': 'off', // разршение на нижние подчеркивание
-        'i18next/no-literal-string': ['error', { markupOnly: true }], // правило, которое ругается если нет перевода при markupOnly - ругается только на отстутсвие переводов в jsx
+        'i18next/no-literal-string': [ // правило, которое ругается если нет перевода при markupOnly - ругается только на отстутсвие переводов в jsx
+            'error',
+            {
+                markupOnly: true,
+                ignoreAttribute: ['data-testid'], // исключения
+            },
+        ],
         'max-len': ['error', { ignoreComments: true }], // длинные комментарии не дебажим
     },
     globals: {
         __IS_DEV__: true,
     },
+    // для определенных типов фалов переопределить свойства переводов
+    overrides: [
+        {
+            files: ['**/src/**/*.test.{ts,tsx}'], // для каких именно файлов
+            rules: {
+                'i18next/no-literal-string': 'off', // какие именно правила
+            },
+        },
+    ],
 };
