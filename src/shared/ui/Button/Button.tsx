@@ -4,6 +4,7 @@ import cls from './Button.module.scss';
 
 export enum ThemeButton { // темы кнопки
     CLEAR = 'clear', // кнопка без всего, просто текст
+    OUTLINE = 'outline',
 }
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>{ // по умолчанию в `React` куча Props, поэтому мы их просто объявляем и наследуем
@@ -20,7 +21,6 @@ export const Button: FC<ButtonProps> = (props) => { // диструкториз�
     } = props;
 
     return (
-        // eslint-disable-next-line react/button-has-type
         <button
             className={classNames(cls.Button, { [cls[theme]]: true }, [className])}
             {...otherProps}

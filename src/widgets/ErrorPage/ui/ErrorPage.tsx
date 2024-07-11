@@ -12,7 +12,7 @@ export const ErrorPage = ({ className }: ErrorPageProps) => {
 
     // Функция для перезагрузки страницы
     const reloadPage = () => {
-    // eslint-disable-next-line no-restricted-globals
+        // eslint-disable-next-line no-restricted-globals
         location.reload();
     };
 

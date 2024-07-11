@@ -2,14 +2,10 @@
     --font-family-main: consolas, "Times New Roman", serif; /* основной стиль шрифт */
     --font-size-m: 16px; /* средний размер шрифта */
     --font-line-m: 24px; /* размре высоты линии шрифта */
-
-    /* объединяющая переменная, которая включает размер шрифта, размеры высоты шрифта, стиль шрифта */
-    --font-m: var(--font-size-m) / var(--font-line-m) var(--font-family-main);
+    --font-m: var(--font-size-m) / var(--font-line-m) var(--font-family-main); /* объединяющая переменная */
     --font-size-l: 24px; /* размер шрифта для заголовоков */
     --font-line-l: 32px; /* размре высоты линии шрифта */
-
-    /* объединяющая переменная, которая включает размер шрифта, размеры высоты шрифта, стиль шрифта */
-    --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main);
+    --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main); /* объединяющая переменная */
     --navbar-height: 50px;/* размер NavBar */
     --sidebar-width: 300px;/* размер SideBar */
     --sidebar-width-collapsed: 80px;/* размер SideBar при свертке */

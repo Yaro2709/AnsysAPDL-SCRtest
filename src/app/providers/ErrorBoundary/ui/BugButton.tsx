@@ -9,7 +9,6 @@ export const BugButton = () => {
 
     const onThrow = () => setError(true);
 
-    // Тестовая ошибка
     useEffect(() => {
         if (error) {
             throw new Error();

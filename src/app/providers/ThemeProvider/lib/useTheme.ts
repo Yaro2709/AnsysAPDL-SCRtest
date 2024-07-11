@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { LOCAL_STORAGE_THEME_KEY, Theme, ThemeContext } from '../lib/ThemeContext';
+import { LOCAL_STORAGE_THEME_KEY, Theme, ThemeContext } from './ThemeContext';
 
 interface UseThemeResult { // определяем какие данные будет возвращать наш хук
     toggleTheme: () => void; // функция выбора темы

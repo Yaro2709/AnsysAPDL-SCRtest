@@ -45,7 +45,7 @@ module.exports = {
                 ignoreAttribute: ['data-testid'], // исключения
             },
         ],
-        'max-len': ['error', { ignoreComments: true }], // длинные комментарии не дебажим
+        'max-len': ['error', { ignoreComments: true, code: 100 }], // длинные комментарии не дебажим
     },
     globals: {
         __IS_DEV__: true,
