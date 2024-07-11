@@ -42,7 +42,7 @@ module.exports = {
             'error',
             {
                 markupOnly: true,
-                ignoreAttribute: ['data-testid'], // исключения
+                ignoreAttribute: ['data-testid', 'to'], // исключения
             },
         ],
         'max-len': ['error', { ignoreComments: true, code: 100 }], // длинные комментарии не дебажим

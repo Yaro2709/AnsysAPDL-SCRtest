@@ -13,8 +13,8 @@ export default ({ config }: {config: webpack.Configuration}) => {
     config.resolve.modules.push(paths.src); // прокидываем в массив modules
     config.resolve.extensions.push('.ts', '.tsx'); // тк используем ts и tsx, то нам надо добавить их расширения
 
-    // eslint-disable-next-line no-param-reassign
     // проходим по всем дефолтным правилам WebPack
+    // eslint-disable-next-line no-param-reassign
     config.module.rules = config.module.rules.map((rule: RuleSetRule) => {
         // если регулярка svg, то в таком мы вернемя новый объект, в котором развернем старое правило, но исключаем файлы svg
         if (/svg/.test(rule.test as string)) {
