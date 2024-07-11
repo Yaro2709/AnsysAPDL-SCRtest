@@ -1,15 +1,19 @@
 import { RouteProps } from 'react-router-dom';
 import { MainPage } from 'pages/MainPage';
 import { AboutPage } from 'pages/AboutPage';
+import { NotFoundPage } from 'pages/NotFoundPage';
 
 export enum AppRoutes { // перечисление маршрутов
     MAIN = 'main',
     ABOUT = 'about',
+    NOT_FOUND = 'not_found',
 }
 
 export const RoutePath: Record<AppRoutes, string> = { // создадим объект, где укажим каждому маршруту его путь
     [AppRoutes.MAIN]: '/',
     [AppRoutes.ABOUT]: '/about',
+    // последний
+    [AppRoutes.NOT_FOUND]: '*',
 };
 
 export const routeConfig: Record<AppRoutes, RouteProps> = { // объявим роутеры и их значения
@@ -20,5 +24,9 @@ export const routeConfig: Record<AppRoutes, RouteProps> = { // объявим р
     [AppRoutes.ABOUT]: {
         path: RoutePath.about,
         element: <AboutPage />,
+    },
+    [AppRoutes.NOT_FOUND]: {
+        path: RoutePath.not_found,
+        element: <NotFoundPage />,
     },
 };
