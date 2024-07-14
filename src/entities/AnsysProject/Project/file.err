@@ -1,0 +1,38 @@
+/COM,ANSYS RELEASE 2020 R2           BUILD 20.2      UP20200601       16:30:28
+
+ *** WARNING ***                         CP =       0.203   TIME= 16:30:29
+ The requested number of shared-memory processors (20) exceeds the       
+ number of physical processors that are available (6).  The number of    
+ processors used will be 6.                                              
+
+ *** WARNING ***                         CP =       0.484   TIME= 16:30:30
+ The requested number of shared-memory processors (20) cannot be greater 
+ than that specified by the ANSYS command line option -NP (6).           
+  The number of processors used will be left at 6.                       
+
+ *** ERROR ***                           CP =       9.172   TIME= 16:47:26
+ An error occurred while attempting to open the results file             
+ test/Construct_new.rst.                                                 
+
+ *** ERROR ***                           CP =       9.734   TIME= 16:47:43
+ An error occurred while attempting to open the results file             
+ test\Construct_new.rst.                                                 
+/COM,ANSYS RELEASE 2020 R2           BUILD 20.2      UP20200601       17:18:48
+
+ *** WARNING ***                         CP =       0.266   TIME= 17:18:49
+ The requested number of shared-memory processors (20) exceeds the       
+ number of physical processors that are available (6).  The number of    
+ processors used will be 6.                                              
+
+ *** WARNING ***                         CP =       0.484   TIME= 17:18:50
+ The requested number of shared-memory processors (20) cannot be greater 
+ than that specified by the ANSYS command line option -NP (6).           
+  The number of processors used will be left at 6.                       
+
+ *** WARNING ***                         CP =       5.234   TIME= 17:50:08
+ During this session a solution was performed using 6 CPU cores in       
+ shared-memory parallel (SMP) mode (-np 6).  It is strongly recommended  
+ to use distributed memory parallel (DMP) mode instead (-dis -np 6).     
+ DMP mode typically outperforms SMP mode, even when running on a single  
+ system.  For more information, see the ANSYS Parallel Processing Guide  
+ in the ANSYS Help system.                                               

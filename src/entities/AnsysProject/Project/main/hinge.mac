@@ -1,0 +1,9 @@
+! Шарнир
+allsel
+NSEL,s,loc,x,6
+NSEL,r,loc,z,4
+CP,next,Ux,all
+CP,next,Uy,all
+CP,next,Uz,all
+CP,next,Rotx,all
+CP,next,Rotz,all

@@ -1,0 +1,21 @@
+! Нагрузки
+ksel,s,,,3
+nslk
+F,all,MY,-22.1 ! кH
+
+ksel,s,,,5
+nslk
+F,all,MY,22.1 ! кH*м
+
+ksel,s,,,9
+nslk
+F,all,FX,-33.7 ! кH*м
+
+! Распределенная нагрузка
+lsel,s,,,1
+esll
+SFBEAM,all,QY,PRES,-4.8, ! кН/м
+
+lsel,s,,,6
+esll
+SFBEAM,all,,PRES,4.8, ! кH/м
