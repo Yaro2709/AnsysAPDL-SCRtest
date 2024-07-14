@@ -14,7 +14,7 @@ F,all,FX,-33.7 ! кH*м
 ! Распределенная нагрузка
 lsel,s,,,1
 esll
-SFBEAM,all,QY,PRES,-4.8, ! кН/м
+SFBEAM,all,QY,PRES,-6.8, ! кН/м
 
 lsel,s,,,6
 esll

@@ -36,3 +36,9 @@
  DMP mode typically outperforms SMP mode, even when running on a single  
  system.  For more information, see the ANSYS Parallel Processing Guide  
  in the ANSYS Help system.                                               
+/COM,ANSYS RELEASE 2020 R2           BUILD 20.2      UP20200601       01:46:15
+
+ *** WARNING ***                         CP =       0.250   TIME= 01:46:16
+ The requested number of shared-memory processors (20) exceeds the       
+ number of physical processors that are available (6).  The number of    
+ processors used will be 6.                                              
