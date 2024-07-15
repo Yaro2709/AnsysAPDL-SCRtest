@@ -8,6 +8,12 @@ export function buildPlugins({ paths, isDev }: BuildOptions): webpack.WebpackPlu
     const plugins = [
         new HtmlWebpackPlugin({
             template: paths.html, // объявляем шаблонный файл
+            chunks: ['main'],
+        }), // плагин для html сборки
+        new HtmlWebpackPlugin({
+            filename: 'report.html',
+            template: '.loki/report.html', // объявляем шаблонный файл
+            chunks: ['exampleEntry'],
         }), // плагин для html сборки
         new webpack.ProgressPlugin(), // плагин для того, чтобы мы видели сколько процентов проекта мы уже собрали.
         new MiniCssExtractPlugin({ // плагин для css

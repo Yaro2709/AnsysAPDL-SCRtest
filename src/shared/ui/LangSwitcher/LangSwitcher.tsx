@@ -1,7 +1,7 @@
-import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
 import React from 'react';
-import { Button, ButtonTheme } from 'shared/ui/Button/Button';
+import Nav from 'react-bootstrap/Nav';
+import { AppLink } from 'shared/ui/AppLink/AppLink';
 
 interface LangSwitcherProps {
     className?: string;
@@ -17,12 +17,13 @@ export const LangSwitcher = ({ className, short }: LangSwitcherProps) => {
     };
 
     return (
-        <Button
-            className={classNames('', {}, [className])}
-            theme={ButtonTheme.CLEAR}
-            onClick={toggle}
-        >
-            {t(short ? 'Короткий язык' : 'Язык')}
-        </Button>
+        <Nav.Link>
+            <AppLink
+                to="#"
+                onClick={toggle}
+            >
+                {t(short ? 'Короткий язык' : 'Язык')}
+            </AppLink>
+        </Nav.Link>
     );
 };

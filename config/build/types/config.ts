@@ -4,6 +4,7 @@ export interface BuildPaths {
     entry: string;
     build: string;
     html: string;
+    loki: string;
     src: string;
 }
 

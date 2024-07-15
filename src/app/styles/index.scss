@@ -3,10 +3,13 @@
 @import "themes/normal";
 @import "themes/dark";
 
+/* import bootstrap to set changes */
+@import '~bootstrap/scss/bootstrap';
+
 .app {
     font: var(--font-m);
     background: var(--bg-color);
-    color: var(--primary-color);
+    color: var(--text-color);
     min-height: 100vh;
 }
 
@@ -20,4 +23,23 @@
     height: calc(100vh - var(--navbar-height));
     overflow-y: auto;
     flex-shrink: 100;
+}
+
+/*scrollbar*/
+::-webkit-scrollbar{
+    width:5px;
+    height:5px;
+    position: fixed;
+}
+::-webkit-scrollbar-track-piece{
+
+}
+::-webkit-scrollbar-track{
+    background: var(--bg-color);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--text-color);
+}
+::-webkit-scrollbar-corner {
+    display:none;
 }

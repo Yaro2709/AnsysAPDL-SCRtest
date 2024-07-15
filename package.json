@@ -20,7 +20,9 @@
     "test:ui:html": "reg-cli --from .loki/report.json --report .loki/report.html",
     "storybook": "start-storybook -p 6006 -c ./config/storybook",
     "storybook:build": "build-storybook -c ./config/storybook",
-    "delete:scr": "node deleteScr.js"
+    "delete:scr": "node scripts/deleteScr.js",
+    "generate:report": "node scripts/report.js",
+    "generate:copy": "node scripts/copy.js"
   },
   "keywords": [],
   "author": "",
@@ -85,10 +87,12 @@
   },
   "dependencies": {
     "-": "^0.0.1",
+    "bootstrap": "^5.3.3",
     "i18next": "^21.6.11",
     "i18next-browser-languagedetector": "^6.1.3",
     "i18next-http-backend": "^1.3.2",
     "react": "^17.0.2",
+    "react-bootstrap": "^2.10.4",
     "react-dom": "^17.0.2",
     "react-i18next": "^11.15.5",
     "react-router-dom": "^6.2.1"
