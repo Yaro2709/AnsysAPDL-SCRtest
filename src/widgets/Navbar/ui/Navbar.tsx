@@ -8,6 +8,7 @@ import { RoutePath } from 'shared/config/routeConfig/routeConfig';
 import { LangSwitcher } from 'shared/ui/LangSwitcher/LangSwitcher';
 import { useState } from 'react';
 import { ThemeSwitcher } from 'shared/ui/ThemeSwitcher/ThemeSwitcher';
+import AnsysIcon from 'shared/assets/icons/ansys.png';
 import cls from './Navbar.module.scss';
 
 interface NavbarProps {
@@ -22,26 +23,27 @@ export const Navbar = ({ className }: NavbarProps) => {
         <NavbarB expand="lg" className={classNames(cls.Navbar, {}, [className])}>
             <Container>
                 <NavbarB.Brand className={classNames(cls.Name, {}, [className])}>
-                    AnsysSCR
+                    <img
+                        src={AnsysIcon}
+                        width="25"
+                        height="25"
+                        className="d-inline-block align-top"
+                        // eslint-disable-next-line i18next/no-literal-string
+                        alt="Ansys"
+                    />
                 </NavbarB.Brand>
                 <NavbarB.Toggle aria-controls="basic-navbar-nav" />
                 <NavbarB.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link>
-                            <AppLink to={RoutePath.main}>
-                                Home
-                            </AppLink>
-                        </Nav.Link>
-                        <Nav.Link>
-                            <AppLink to={RoutePath.about}>
-                                About
-                            </AppLink>
-                        </Nav.Link>
-                        <Nav.Link>
-                            <a href="/report.html" target="_blank" rel="noreferrer">
-                                About
-                            </a>
-                        </Nav.Link>
+                        <AppLink to={RoutePath.about}>
+                            {t('О приложение')}
+                        </AppLink>
+                        <AppLink to={RoutePath.main}>
+                            {t('Скриншоты')}
+                        </AppLink>
+                        <a href="http://localhost:8080/.loki/report.html" target="_blank" rel="noreferrer">
+                            {t('Отчет')}
+                        </a>
                         <LangSwitcher
                             short={collapsed}
                             className={cls.lang}

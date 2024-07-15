@@ -4,7 +4,14 @@
 @import "themes/dark";
 
 /* import bootstrap to set changes */
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
+
+.navbar-brand {
+    &:hover,
+    &:focus {
+        color: var(--primary-color);
+    }
+}
 
 .app {
     font: var(--font-m);
@@ -25,21 +32,27 @@
     flex-shrink: 100;
 }
 
-/*scrollbar*/
-::-webkit-scrollbar{
-    width:5px;
-    height:5px;
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
     position: fixed;
 }
-::-webkit-scrollbar-track-piece{
 
-}
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
     background: var(--bg-color);
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
     background: var(--text-color);
 }
+
 ::-webkit-scrollbar-corner {
-    display:none;
+    display: none;
+}
+
+a {
+    color: var(--primary-color);
+    display: block;
+    padding: 0 0.5em;
 }

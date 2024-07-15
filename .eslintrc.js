@@ -42,10 +42,10 @@ module.exports = {
             'error',
             {
                 markupOnly: true,
-                ignoreAttribute: ['data-testid', 'to'], // исключения
+                ignoreAttribute: ['data-testid', 'to', 'expand', 'aria-controls'], // исключения
             },
         ],
-        'max-len': ['error', { ignoreComments: true, code: 100 }], // длинные комментарии не дебажим
+        'max-len': ['error', { ignoreComments: true, code: 150 }], // длинные комментарии не дебажим
     },
     globals: {
         __IS_DEV__: true,

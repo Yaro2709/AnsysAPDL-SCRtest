@@ -12,13 +12,11 @@ export const ThemeSwitcher = ({ className }: ThemeSwitcherProps) => {
     const { theme, toggleTheme } = useTheme();
     const { t } = useTranslation();
     return (
-        <Nav.Link>
-            <AppLink
-                to="#"
-                onClick={toggleTheme}
-            >
-                {t(theme === Theme.DARK ? 'Темная тема' : 'Светлая тема')}
-            </AppLink>
-        </Nav.Link>
+        <AppLink
+            to="#"
+            onClick={toggleTheme}
+        >
+            {t(theme === Theme.DARK ? 'Темная тема' : 'Светлая тема')}
+        </AppLink>
     );
 };

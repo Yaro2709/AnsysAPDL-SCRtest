@@ -17,13 +17,11 @@ export const LangSwitcher = ({ className, short }: LangSwitcherProps) => {
     };
 
     return (
-        <Nav.Link>
-            <AppLink
-                to="#"
-                onClick={toggle}
-            >
-                {t(short ? 'Короткий язык' : 'Язык')}
-            </AppLink>
-        </Nav.Link>
+        <AppLink
+            to="#"
+            onClick={toggle}
+        >
+            {t(short ? 'Короткий язык' : 'Язык')}
+        </AppLink>
     );
 };

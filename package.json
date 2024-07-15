@@ -21,8 +21,7 @@
     "storybook": "start-storybook -p 6006 -c ./config/storybook",
     "storybook:build": "build-storybook -c ./config/storybook",
     "delete:scr": "node scripts/deleteScr.js",
-    "generate:report": "node scripts/report.js",
-    "generate:copy": "node scripts/copy.js"
+    "report:server": "live-server --open=.loki/report.html --port=8080"
   },
   "keywords": [],
   "author": "",
@@ -67,6 +66,7 @@
     "identity-obj-proxy": "^3.0.0",
     "install": "^0.13.0",
     "jest": "^27.5.1",
+    "live-server": "^1.2.2",
     "loki": "^0.31.0",
     "mini-css-extract-plugin": "^2.5.3",
     "reg-cli": "^0.17.6",

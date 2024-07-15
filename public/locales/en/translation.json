@@ -1,12 +1,14 @@
 {
-  "Тестовый перевод": "Test example",
-  "Перевод": "Translate",
-  "Главная страница": "Main page",
-  "Язык": "English",
-  "Страница не найдена": "Page not found",
-  "Произошла непредвиденная ошибка": "An unexpected error has occurred",
-  "Обновить страницу": "Refresh the page",
   "throw error": "throw error",
+  "О приложение": "About the application",
+  "Скриншоты": "Screenshots",
+  "Отчет": "Report",
+  "Темная тема": "Dark theme",
+  "Светлая тема": "Light theme",
+  "Обновить страницу": "Refresh the page",
   "Переключить": "Toggle",
-  "Короткий язык": "EN"
+  "Произошла непредвиденная ошибка": "An unexpected error occurred",
+  "Страница не найдена": "Page not found",
+  "Короткий язык": "EN",
+  "Язык": "English"
 }
