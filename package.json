@@ -21,7 +21,7 @@
     "storybook": "start-storybook -p 6006 -c ./config/storybook",
     "storybook:build": "build-storybook -c ./config/storybook",
     "report:server": "live-server --open=.loki/report.html --port=7070",
-    "delete:scr": "node scripts/deleteScr.js",
+    "delete:scr": "node scripts/deleteScr.js"
   },
   "keywords": [],
   "author": "",
