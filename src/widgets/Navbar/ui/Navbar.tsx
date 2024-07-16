@@ -41,7 +41,7 @@ export const Navbar = ({ className }: NavbarProps) => {
                         <AppLink to={RoutePath.main}>
                             {t('Скриншоты')}
                         </AppLink>
-                        <a href="http://localhost:8080/.loki/report.html" target="_blank" rel="noreferrer">
+                        <a href="http://localhost:7070/.loki/report.html" target="_blank" rel="noreferrer">
                             {t('Отчет')}
                         </a>
                         <LangSwitcher

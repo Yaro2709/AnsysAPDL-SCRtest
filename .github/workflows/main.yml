@@ -17,18 +17,34 @@ jobs:
         run: npm install  
       - name: build production project  
         run: npm run build:prod  
-        if: always()  
+        if: always()
+      - name: build development project
+        run: npm run build:dev
+        if: always()
       - name: linting typescript  
         run: npm run lint:ts  
         if: always()  
       - name: linting css  
         run: npm run lint:scss  
       - name: unit testing  
-        if: always()  
-        run: npm run test:unit  
+        if: always()
+        run: npm run test:unit
       - name: build storybook  
-        run: npm run storybook:build  
-        if: always()  
-      - name: screenshot testing  
-        run: npm run test:ui:ci  
+        run: npm run storybook:build
+        if: always()
+      - name: screenshot testing
+        run: npm run test:ui:ci
+        if: always()
+      - name: build storybook server
+        run: npm run storybook
+      - name: screenshot testing ansys project
+        run: npm run test:ui
+      - name: build report ansys project
+        run: npm run test:ui:report
+        if: always()
+      - name: build report server ansys project
+        run: npm run report:server
+        if: always()
+      - name: delete screenshot ansys project
+        run: npm run delete:scr
         if: always()
