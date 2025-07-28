@@ -83,7 +83,7 @@
     "webpack": "^5.100.2",
     "webpack-bundle-analyzer": "^4.5.0",
     "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^4.7.4"
+    "webpack-dev-server": "^5.2.2"
   },
   "dependencies": {
     "-": "^0.0.1",
